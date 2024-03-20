@@ -1,0 +1,6 @@
+{
+    "csv_file": "Your csv file path \\questions_and_contexts.csv",
+    "development": true,  
+  "allowed_origins": ["http://localhost:81"]
+}
+  
