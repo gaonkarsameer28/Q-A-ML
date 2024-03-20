@@ -6,7 +6,7 @@ from flask_cors import CORS
 import json
 #pip install flask-cors
 
-with open('C:\\Users\\sgaonkar\\source\\repos\\GEP-GitHub\\Q-A\\api\\config.json') as f:
+with open('config.json') as f:
     config = json.load(f)
 
 app = Flask(__name__)
