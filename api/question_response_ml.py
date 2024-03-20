@@ -10,7 +10,7 @@ import json
 
 def load_config():
   """Loads configuration data from config.json."""  
-  with open("C:\\Users\\sgaonkar\\source\\repos\\GEP-GitHub\\Q-A\\api\\config.json", "r") as config_file:
+  with open("config.json", "r") as config_file:
     config_data = json.load(config_file)
   return config_data
 
