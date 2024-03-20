@@ -1,0 +1,64 @@
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  display: flex;
+  flex-direction: column-reverse;
+  height: 100vh;
+}
+
+#answer {
+  padding: 20px;
+  font-size: 18px;
+  border: 1px solid #ddd;
+  flex: 1;
+  overflow-y: auto; /* Enable scrolling for long answers */
+}
+
+#question-container {
+  text-align: center;
+}
+
+#user-question {
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#ask-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.star-rating {
+  font-size: 0;
+  white-space: nowrap;
+  display: inline-block;
+  width: 150px;
+  height: 30px;
+  overflow: hidden;
+  position: relative;
+  background: url('star.jpg') repeat-x;
+  cursor: pointer;
+}
+
+.star-rating input {
+  display: none;
+}
+
+.star-rating label {
+  float: right;
+  padding: 0 15px;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  cursor: pointer;
+  background: url('star.jpg') 0 -30px;
+}
+
+.star-rating input:checked ~ label,
+.star-rating input:checked ~ label ~ label {
+  background-position: 0 0;
+}
